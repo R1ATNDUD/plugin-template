@@ -61,7 +61,7 @@ tasks {
         doLast {
             copy {
                 from(archiveFile)
-                into(File("C:/Users/qma60/Desktop/command_plugin_server/plugins"))
+                into(File(""))
             }
         }
     }
