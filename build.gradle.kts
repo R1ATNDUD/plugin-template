@@ -9,7 +9,6 @@ group = property("group")!!
 version = property("version")!!
 
 val paper_version: String by project
-val icemmand_version: String by project
 
 repositories {
     mavenCentral()
@@ -55,14 +54,14 @@ tasks {
 
     create<Jar>("paperJar") {
         archiveClassifier.set(rootProject.name)
-        archiveClassifier.set(" ")
+        archiveClassifier.set("")
 
         from(sourceSets["main"].output)
 
         doLast {
             copy {
                 from(archiveFile)
-                into(File(rootDir, "C:/Users/qma60/Desktop/command_plugin_server/plugins"))
+                into(File("C:/Users/qma60/Desktop/command_plugin_server/plugins"))
             }
         }
     }
