@@ -61,7 +61,7 @@ tasks {
         doLast {
             copy {
                 from(archiveFile)
-                into(File("Write ur directory"))
+                into(File("<Write ur directory>"))
             }
         }
     }
